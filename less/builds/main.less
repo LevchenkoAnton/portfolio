@@ -1,0 +1,58 @@
+.main {
+
+  &__wrapper {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/main-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .base-text-bold;
+    color: @header-text;
+  }
+
+  &__title {
+    font-size: 60px;
+    margin-bottom: 25px;
+  }
+
+  &__description {
+    font-size: 30px;
+    margin-bottom: 100px;
+  }
+
+  &__cv {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    .base-text-bold;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 5px;
+    background: @btn-bg;
+  }
+
+  &__cv:hover {
+    background: darken(@btn-bg, 10%);
+  }
+
+  &__cv:before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: -60px;
+    left: 50%;
+    margin-left: -54px;
+    width: 108px;
+    height: 25px;
+    background: url("../img/bracket.png") no-repeat center center;
+  }
+}

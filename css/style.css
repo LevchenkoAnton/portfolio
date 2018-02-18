@@ -1,0 +1,160 @@
+/* fonts files */
+.base-text-bold {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+}
+.base-text-reg {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+}
+/*colors*/
+body {
+  line-height: 26px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+input:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+.header__wrapper {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  background: #02918c;
+}
+.logo {
+  font-size: 30px;
+  line-height: 60px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+.logo span {
+  color: #cfc91d;
+}
+.main-nav__list {
+  display: flex;
+}
+.main-nav__item {
+  display: block;
+  margin: 0 20px;
+}
+.main-nav__item a {
+  font-size: 20px;
+  line-height: 60px;
+  color: #fff;
+}
+.main-nav__item:first-child {
+  margin-left: 0;
+}
+.main-nav__item:last-child {
+  margin-right: 0;
+}
+.main__wrapper {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/main-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+.main__title {
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+.main__description {
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+.main__cv {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 15px 30px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  background: #cfc91d;
+}
+.main__cv:hover {
+  background: #a29e17;
+}
+.main__cv:before {
+  position: absolute;
+  display: block;
+  content: '';
+  top: -60px;
+  left: 50%;
+  margin-left: -54px;
+  width: 108px;
+  height: 25px;
+  background: url("../img/bracket.png") no-repeat center center;
+}
+.btn {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 30px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  background: #cfc91d;
+}
+.btn:hover {
+  background: #a29e17;
+}
+.skills__wrapper {
+  text-align: center;
+}
+.skills__title {
+  position: relative;
+  font-size: 30px;
+}
+.skills__title:before {
+  position: absolute;
+  content: '';
+  width: 44%;
+  height: 2px;
+  left: 0;
+  box-shadow: 0 2px 0 transparent, 0 4px 0 #000, 0 6px 0 transparent, 0 8px 0 #000, 0 10px 0 transparent, 0 12px 0 #000, 0 14px 0 transparent, 0 16px 0 #000, 0 18px 0 transparent, 0 20px 0 #000;
+}
+.skills__title:after {
+  position: absolute;
+  content: '';
+  width: 44%;
+  height: 2px;
+  right: 0;
+  box-shadow: 0 2px 0 transparent, 0 4px 0 #000, 0 6px 0 transparent, 0 8px 0 #000, 0 10px 0 transparent, 0 12px 0 #000, 0 14px 0 transparent, 0 16px 0 #000, 0 18px 0 transparent, 0 20px 0 #000;
+}
