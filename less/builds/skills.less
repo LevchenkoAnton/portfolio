@@ -7,6 +7,7 @@
   &__title {
     position: relative;
     font-size: 30px;
+    margin-bottom: 40px;
   }
 
   &__title:before {
@@ -43,5 +44,32 @@
     0 16px 0 @base-text,
     0 18px 0 transparent,
     0 20px 0 @base-text,
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1600px;
+  }
+
+  &__item {
+    display: block;
+    width: 330px;
+    margin-bottom: 50px;
+  }
+
+  &__logo {
+    display: block;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  &__item-title {
+    margin: 0;
+    font-size: 25px;
+    text-align: center;
   }
 }

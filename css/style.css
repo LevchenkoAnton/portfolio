@@ -8,6 +8,9 @@
   font-weight: 400;
 }
 /*colors*/
+* {
+  box-sizing: border-box;
+}
 body {
   line-height: 26px;
   color: #000;
@@ -105,9 +108,14 @@ button:focus {
   border: none;
   border-radius: 5px;
   background: #cfc91d;
+  transition: all 5ms;
 }
 .main__cv:hover {
   background: #a29e17;
+}
+.main__cv:active {
+  background: #767210;
+  color: #fff;
 }
 .main__cv:before {
   position: absolute;
@@ -118,7 +126,7 @@ button:focus {
   margin-left: -54px;
   width: 108px;
   height: 25px;
-  background: url("../img/bracket.png") no-repeat center center;
+  background: url("../img/icons/bracket.png") no-repeat center center;
 }
 .btn {
   display: block;
@@ -131,9 +139,14 @@ button:focus {
   border: none;
   border-radius: 5px;
   background: #cfc91d;
+  transition: all 5ms;
 }
 .btn:hover {
   background: #a29e17;
+}
+.btn:active {
+  background: #767210;
+  color: #fff;
 }
 .skills__wrapper {
   text-align: center;
@@ -141,6 +154,7 @@ button:focus {
 .skills__title {
   position: relative;
   font-size: 30px;
+  margin-bottom: 40px;
 }
 .skills__title:before {
   position: absolute;
@@ -157,4 +171,27 @@ button:focus {
   height: 2px;
   right: 0;
   box-shadow: 0 2px 0 transparent, 0 4px 0 #000, 0 6px 0 transparent, 0 8px 0 #000, 0 10px 0 transparent, 0 12px 0 #000, 0 14px 0 transparent, 0 16px 0 #000, 0 18px 0 transparent, 0 20px 0 #000;
+}
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+.skills__item {
+  display: block;
+  width: 330px;
+  margin-bottom: 50px;
+}
+.skills__logo {
+  display: block;
+  height: 60px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.skills__item-title {
+  margin: 0;
+  font-size: 25px;
+  text-align: center;
 }
