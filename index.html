@@ -11,21 +11,19 @@
 <header class="page-header">
     <div class="header__wrapper">
         <a href="#" class="logo">My<span>folio</span></a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed">
+            <button class="header__open-nav">Открыть меню</button>
             <ul class="main-nav__list">
-                <li class="main-nav__item">
+                <li class="main-nav__item main-nav__item--home">
                     <a href="#">Home</a>
-                </li><!--
-                <li class="main-nav__item">
-                    <a href="#">About me</a>
-                </li>-->
-                <li class="main-nav__item">
+                </li>
+                <li class="main-nav__item main-nav__item--skills">
                     <a href="#">Skills</a>
                 </li>
-                <li class="main-nav__item">
+                <li class="main-nav__item main-nav__item--work">
                     <a href="#">My work</a>
                 </li>
-                <li class="main-nav__item">
+                <li class="main-nav__item main-nav__item--contact">
                     <a href="#">Contact me</a>
                 </li>
             </ul>
@@ -44,7 +42,7 @@
 
 <section class="skills">
     <div class="skills__wrapper">
-        <h2 class="skills__title">Skills</h2>
+        <h2 class="section__title">Skills</h2>
         <div class="skills__list">
             <div class="skills__item">
                 <img src="img/icons/html.png" alt="HTML 5" class="skills__logo">
@@ -97,6 +95,39 @@
         </div>
     </div>
 </section>
+
+<section class="works">
+    <div class="works__wrapper">
+        <h2 class="section__title">My work</h2>
+        <div class="works__list">
+            <div class="works__item">
+                <a href="https://levchenkoanton.github.io/Sedona-project/">
+                    <img src="img/sedona.jpg" alt="Sedona" class="works__preview">
+                </a>
+            </div>
+            <div class="works__item">
+                <a href="https://levchenkoanton.github.io/technomart/">
+                    <img src="img/technomart.jpg" alt="Technomart" class="works__preview">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="contact__wrapper">
+        <h2 class="section__title">Contact me</h2>
+        <p class="contact__description">I am ready to work with you</p>
+        <div class="contact__list">
+            <p class="contact__item contact__item--post">Anton.Levchenko.post@gmail.com</p>
+            <p class="contact__item contact__item--phone">+380-50-9303866</p>
+        </div>
+    </div>
+</section>
+<footer class="page-footer">
+    <p class="copyriht">Copyright © 2018</p>
+</footer>
+
 
 
 

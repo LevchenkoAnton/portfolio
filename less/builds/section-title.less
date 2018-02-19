@@ -1,0 +1,66 @@
+.section {
+
+  &__title {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  &__title:before,
+  &__title:after {
+    position: absolute;
+    content: '';
+    width: 41%;
+    height: 2px;
+    box-shadow: 0 2px 0 transparent,
+    0 4px 0 @base-text,
+    0 6px 0 transparent,
+    0 8px 0 @base-text,
+    0 10px 0 transparent,
+    0 12px 0 @base-text,
+    0 14px 0 transparent,
+    0 16px 0 @base-text,
+    0 18px 0 transparent,
+    0 20px 0 @base-text,
+  }
+
+  &__title:before {
+    left: 0;
+  }
+
+  &__title:after {
+    right: 0;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .section {
+
+    &__title {
+      font-size: 25px;
+    }
+
+    &__title:before,
+    &__title:after {
+      width: 35%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+
+  .section {
+
+    &__title {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    &__title:before,
+    &__title:after {
+      width: 28%;
+    }
+  }
+}

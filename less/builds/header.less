@@ -9,4 +9,48 @@
     color: @header-text;
     background: @header-bg;
   }
+
+  &__open-nav {
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    height: 56px;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__open-nav:before {
+    position: absolute;
+    content: '';
+    right: 20px;
+    top: 17px;
+    width: 23px;
+    height: 4px;
+    background: @header-text;
+
+    box-shadow: 0 4px 0 transparent,
+    0 8px 0 @header-text,
+    0 12px 0 transparent,
+    0 16px 0 @header-text;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .header {
+
+    &__wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__open-nav {
+      display: block;
+    }
+  }
 }

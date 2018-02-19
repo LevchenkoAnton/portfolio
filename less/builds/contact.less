@@ -1,0 +1,63 @@
+.contact {
+  text-align: center;
+
+  &__description {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    display: inline-block;
+    position: relative;
+    padding-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: none;
+  }
+
+  &__item:before {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__item--post:before {
+    background: url("../img/icons/gmail.png") no-repeat center center;
+    background-size: contain;
+  }
+
+  &__item--phone:before {
+    background: url("../img/icons/phone.png") no-repeat center center;
+    background-size: contain;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .contact {
+
+    &__description {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    &__item {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+
+    &__item:last-child {
+      margin-bottom: 40px;
+    }
+  }
+}
