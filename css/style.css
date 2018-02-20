@@ -57,7 +57,7 @@ button:focus {
   padding: 0;
   margin: 0;
   width: 60px;
-  height: 56px;
+  height: 50px;
   font-size: 0;
   background-color: transparent;
   border: none;
@@ -91,6 +91,11 @@ button:focus {
 .logo span {
   color: #cfc91d;
 }
+@media (max-width: 900px) {
+  .logo {
+    line-height: 50px;
+  }
+}
 .main-nav__list {
   display: flex;
 }
@@ -119,6 +124,7 @@ button:focus {
   left: 0;
   width: 22px;
   height: 22px;
+  transition: all 3s;
 }
 .main-nav__item--home a:before {
   background: url("../img/icons/home.png") no-repeat center center;
@@ -135,6 +141,9 @@ button:focus {
 .main-nav__item--contact a:before {
   background: url("../img/icons/contact.png") no-repeat center center;
   background-size: contain;
+}
+.main-nav__item a:hover {
+  color: #cfc91d;
 }
 @media (max-width: 900px) {
   .main-nav__list {
@@ -194,6 +203,7 @@ button:focus {
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 20px;
+  color: #000;
   text-transform: uppercase;
   border: none;
   border-radius: 5px;
@@ -248,15 +258,20 @@ button:focus {
 }
 @media (max-width: 500px) {
   .main__title {
-    font-size: 25px;
+    font-size: 30px;
   }
   .main__description {
     font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 50px;
   }
   .main__cv {
     margin-bottom: 20px;
     padding: 5px 30px 5px 45px;
     font-size: 14px;
+  }
+  .main__cv:before {
+    top: -40px;
   }
   .main__cv:after {
     top: 5px;
@@ -354,6 +369,10 @@ button:focus {
   height: 60px;
   margin: 0 auto;
   margin-bottom: 10px;
+  transition: all 2s;
+}
+.skills__item:hover .skills__logo {
+  transform: rotateY(360deg);
 }
 .skills__item-title {
   margin: 0;

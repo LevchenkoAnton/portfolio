@@ -33,6 +33,7 @@
     left: 0;
     width: 22px;
     height: 22px;
+    transition: all 3s;
   }
 
   &__item--home a:before {
@@ -53,6 +54,10 @@
   &__item--contact a:before {
     background: url("../img/icons/contact.png") no-repeat center center;
     background-size: contain;
+  }
+
+  &__item a:hover {
+    color: @logo-text;
   }
 }
 

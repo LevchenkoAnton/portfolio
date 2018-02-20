@@ -16,23 +16,23 @@
             <button class="header__open-nav">Открыть меню</button>
             <ul class="main-nav__list">
                 <li class="main-nav__item main-nav__item--home">
-                    <a href="#">Home</a>
+                    <a href="#page-main">Home</a>
                 </li>
                 <li class="main-nav__item main-nav__item--skills">
-                    <a href="#">Skills</a>
+                    <a href="#skills">Skills</a>
                 </li>
                 <li class="main-nav__item main-nav__item--work">
-                    <a href="#">My work</a>
+                    <a href="#works">My work</a>
                 </li>
                 <li class="main-nav__item main-nav__item--contact">
-                    <a href="#">Contact me</a>
+                    <a href="#contact">Contact me</a>
                 </li>
             </ul>
         </nav>
     </div>
 </header>
 
-<main>
+<main class="page-main" id="page-main">
     <div class="main__wrapper">
         <h1 class="main__title">Anton Levchenko</h1>
         <p class="main__description">Front-end developmer</p>
@@ -41,7 +41,7 @@
     </div>
 </main>
 
-<section class="skills">
+<section class="skills" id="skills">
     <div class="skills__wrapper">
         <h2 class="section__title">Skills</h2>
         <div class="skills__list">
@@ -97,7 +97,7 @@
     </div>
 </section>
 
-<section class="works">
+<section class="works" id="works">
     <div class="works__wrapper">
         <h2 class="section__title">My work</h2>
         <div class="works__list">
@@ -115,7 +115,7 @@
     </div>
 </section>
 
-<section class="contact">
+<section class="contact" id="contact">
     <div class="contact__wrapper">
         <h2 class="section__title">Contact me</h2>
         <p class="contact__description">I am ready to work with you</p>
@@ -133,6 +133,7 @@
 
 
 
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
